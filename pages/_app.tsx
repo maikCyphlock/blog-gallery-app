@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }:AppProps) {
   // If the current route is listed as public, render it directly
   // Otherwise, use Clerk to require authentication
   return (
-    <ClerkProvider>
+    <ClerkProvider  >
       {isPublicPage ? (
         <Component {...pageProps} />
       ) : (
