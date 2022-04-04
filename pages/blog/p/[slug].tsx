@@ -3,6 +3,14 @@ import matter from 'gray-matter'
 import md from 'markdown-it'
 import Navbar from '../../../components/navbar'
 
+type Post = {
+  slug: string;
+  frontmatter: {
+      [key:string]:any 
+  };
+  content: string
+}
+
 export async function getStaticPaths() {
   const files = fs.readdirSync('blog')
   const paths = files.map((fileName) => ({
@@ -16,7 +24,7 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }:{params:{slug:string}}) {
   const fileName = fs.readFileSync(`blog/${slug}.md`, 'utf-8')
   const { data: frontmatter, content } = matter(fileName)
   return {
@@ -27,7 +35,7 @@ export async function getStaticProps({ params: { slug } }) {
   }
 }
 
-export default function PostPage({ frontmatter, content }) {
+export default function PostPage({ frontmatter, content }:Post) {
   return (
     <>
       <Navbar />
