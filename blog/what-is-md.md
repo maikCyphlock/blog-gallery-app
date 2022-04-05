@@ -2,8 +2,8 @@
 title: 'Next.js page options and how they work'
 metaTitle: 'Next.js page options and how they work'
 metaDesc: 'How to use pages in Next.js exploring the options'
-socialImage: https://blog.openreplay.com/static/40ce8d92d87f5dd7d8e262b2bba53e59/727ea/img5.png
-date: '2021-09-22'
+socialImage: https://png.pngtree.com/png-vector/20190409/ourlarge/pngtree-computer-algorithm-illustration-concept-flat-design-concept-of-web-page-png-image_922183.jpg
+date: '2022-04-01'
 tags:
   - nextjs
 ---
