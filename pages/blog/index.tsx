@@ -47,10 +47,11 @@ export default function Blog ({posts}:{posts:Post[]}){
           <Link href={`blog/p/${slug}`}>
             <a>
               <Image
-                width={650}
-                height={340}
+                width={800}
+                height={600}
                 alt={frontmatter.title}
                 src={frontmatter.socialImage}
+                objectFit="cover"
               />
               <h1 className='p-4'>{frontmatter.title}</h1>
             <small className="m-4 font-bold">tags: {frontmatter.tags}</small>
