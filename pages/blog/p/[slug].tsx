@@ -2,7 +2,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
 import Navbar from '../../../components/navbar'
-import { Post } from '../../types'
+import {Post} from '../../../types'
 
 
 export async function getStaticPaths() {

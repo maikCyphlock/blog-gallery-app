@@ -1,4 +1,4 @@
-export type Post = {
+ export type Post = {
     slug: string;
     frontmatter: {
         title: string;
