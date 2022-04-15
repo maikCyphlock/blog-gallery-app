@@ -2,14 +2,8 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
 import Navbar from '../../../components/navbar'
+import { Post } from '../../types'
 
-type Post = {
-  slug: string;
-  frontmatter: {
-      [key:string]:any 
-  };
-  content: string
-}
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('blog')

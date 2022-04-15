@@ -3,13 +3,8 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Post } from "../types";
 
-type Post = {
-    slug: string;
-    frontmatter: {
-        [key:string]:any 
-    };
-}
 
 export async function getStaticProps() {
     const files = fs.readdirSync('blog');
