@@ -1,5 +1,3 @@
-import  BlurImage from '../components/Blurimage';
-import { Image } from '../types' ;
 import  ImageSrc from 'next/image';
 import Head from 'next/head';
 import Navbar from '../components/navbar'
