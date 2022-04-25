@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
     images:{
-      domains:['picsum.photos','pbs.twimg.com','blog.openreplay.com','png.pngtree.com']
+      domains:['picsum.photos','pbs.twimg.com','blog.openreplay.com','png.pngtree.com','imgur.com']
     }
   
 }
