@@ -18,4 +18,4 @@ export type Image = {
   imageSrc: string
   name: string
   username: string}
-}
+

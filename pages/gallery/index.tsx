@@ -1,17 +1,9 @@
 import  BlurImage from '../../components/Blurimage';
 import { createClient } from '@supabase/supabase-js'
-import Image from 'next/image'
+import { Image } from '../../types';
 import Head from 'next/head';
 import Navbar from '../../components/navbar'
 
-
-type Image = {
-  id: number
-  href: string
-  imageSrc: string
-  name: string
-  username: string
-}
 
 export async function getStaticProps() {
   const supaBaseAdmin = createClient(
@@ -35,7 +27,7 @@ export default function Gallery({images}: {images: Image[]}) {
   return (
     <>
     <Head>
-      <title>Maikcyphlock | blog | gallery</title>
+      <title>Maikcyphlock gallery</title>
     </Head>
     <Navbar />
     <div className="box-border mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
