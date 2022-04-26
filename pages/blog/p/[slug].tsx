@@ -1,6 +1,8 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
+import Prism from 'prismjs'
+import { useEffect } from 'react'
 import Navbar from '../../../components/navbar'
 import {Post} from '../../../types'
 
@@ -30,6 +32,10 @@ export async function getStaticProps({ params: { slug } }:{params:{slug:string}}
 }
 
 export default function PostPage({ frontmatter, content }:Post) {
+  useEffect(() => {
+    Prism.highlightAll()
+
+  }, [])
   return (
     <>
       <Navbar />
