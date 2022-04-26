@@ -5,7 +5,7 @@ import {IoReaderOutline} from 'react-icons/io5'
 
 const Navbar = () => {
   return (
-    <nav className="group flex items-center  justify-between bg-green-700 p-2 text-green-100 shadow-md z-1 ">
+    <nav className="group top-0 sticky flex items-center  justify-between bg-green-700 p-2 text-green-100 shadow-md z-2 ">
       <a className="p-4 text-xl font-bold" href="#">
         Earth Blog
       </a>
