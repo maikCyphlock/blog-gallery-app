@@ -19,7 +19,7 @@ export default function App() {
           layout="fill"
         />
 
-        <div className="<z-1 absolute  flex h-full w-full flex-col items-center  justify-center p-5">
+        <div className=" absolute  flex h-full w-full flex-col items-center  justify-center p-5">
           <h1 className="text-6xl font-bold text-emerald-50 md:text-8xl">
             GREEN BLOG
           </h1>
