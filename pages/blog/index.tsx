@@ -27,16 +27,14 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }: { posts: Post[] }) {
-  console.log(posts[0])
-
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-1 p-4 md:grid-cols-3 md:p-0 lg:grid-cols-4">
+      <div className="grid  grid-cols-1 p-4 md:mx-20 md:grid-cols-3 md:p-0 lg:grid-cols-4">
         {posts.map(({ slug, frontmatter }) => (
           <div
             key={slug}
-            className="m-4 flex flex-col overflow-hidden rounded-xl border border-gray-200 p-4 shadow-lg"
+            className=" m-4 flex flex-col overflow-hidden rounded-xl border border-gray-200 p-4 shadow-lg"
           >
             <Link href={`blog/p/${slug}`}>
               <a>
@@ -48,8 +46,11 @@ export default function Blog({ posts }: { posts: Post[] }) {
                   objectFit="cover"
                 />
                 <h1 className="p-4">{frontmatter.title}</h1>
-                <small className="m-4 font-bold">
-                  tags: {frontmatter.tags}
+                <small className="m-4  font-bold  ">
+                  tags:{' '}
+                  <span className="rounded-lg bg-yellow-300 p-2">
+                    {frontmatter.tags}
+                  </span>
                 </small>
               </a>
             </Link>
